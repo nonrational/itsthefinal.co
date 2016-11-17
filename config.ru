@@ -1,3 +1,4 @@
+require 'rack'
 require './the_countdown'
 
 map "/assets/" do
