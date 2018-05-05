@@ -7,11 +7,16 @@
     <title>It’s the Final Countdown</title>
     <link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
     <link href='assets/style.css' rel='stylesheet' type='text/css'>
+    <script>
+        setTimeout(function() {
+            var vid = document.getElementById("backgroundvid");
+            vid.play();
+        }, 15)
+    </script>
 </head>
 <body>
-<!-- 251 -->
-<video id="backgroundvid" autoplay loop>
-    <source src="//storage.cloud.google.com/itsthefinal-co.appspot.com/europe_the_final_countdown.mp4#t=<%= SecureRandom.random_number(250) %>" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+<video id="backgroundvid" loop="" controls="controls">
+    <source src="//storage.cloud.google.com/itsthefinal-co.appspot.com/europe_the_final_countdown.mp4#t=117" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 </video>
 </body>
 </html>
