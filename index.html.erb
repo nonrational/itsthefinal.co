@@ -1,5 +1,3 @@
-<% require 'securerandom' %>
-
 <!doctype html>
 <html>
 <head>
@@ -8,13 +6,22 @@
     <link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
     <link href='assets/style.css' rel='stylesheet' type='text/css'>
     <script>
-        setTimeout(function() {
-            var vid = document.getElementById("backgroundvid");
-            vid.play();
-        }, 15)
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.getElementById("backgroundvid");
+            var overlay = document.getElementById("overlay");
+
+            overlay.addEventListener("click", function(){
+                overlay.style.visibility = "hidden"
+                video.play();
+            });
+        });
     </script>
 </head>
 <body>
+<div id="overlay">
+    <div class="cta">begin the countdown</div>
+</div>
+
 <video id="backgroundvid" loop="" controls="controls">
     <source src="//storage.cloud.google.com/itsthefinal-co.appspot.com/europe_the_final_countdown.mp4#t=117" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 </video>

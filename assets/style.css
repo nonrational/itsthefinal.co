@@ -1,6 +1,39 @@
+@font-face {
+    font-family: 'hps';
+    src: url('/assets/house_paint_slab.ttf');
+}
+
+* {
+  font-family: 'hps';
+}
+
+body {
+    background-color: black;
+}
+
 video#backgroundvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
+  position: fixed;
+  right: 0; bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
   background-size: cover;
+}
+
+div#overlay {
+  cursor: pointer;
+  position: fixed;
+  right: 0; bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+div.cta {
+  font-size: 10vw;
+  text-transform: uppercase;
+  margin: 10% auto auto auto;
+  /* width: 1074px; */
+  padding-left: 15%;
 }
