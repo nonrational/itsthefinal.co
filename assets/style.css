@@ -8,32 +8,12 @@
 }
 
 body {
-    background-color: black;
+  background-color: black;
+  border: 0;
+  overflow: hidden
 }
 
-video#backgroundvid {
-  position: fixed;
-  right: 0; bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-}
-
-div#overlay {
-  cursor: pointer;
-  position: fixed;
-  right: 0; bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-div.cta {
-  font-size: 10vw;
-  text-transform: uppercase;
-  margin: 10% auto auto auto;
-  /* width: 1074px; */
-  padding-left: 15%;
+iframe {
+  width: 100vw;
+  height: 97vh;
 }
