@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'hps';
-    src: url('/assets/house_paint_slab.ttf');
-}
-
-* {
-  font-family: 'hps';
-}
-
 body {
   background-color: black;
   border: 0;
