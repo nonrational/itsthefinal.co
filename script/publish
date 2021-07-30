@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+set -euxo pipefail
 
+pnpm run build
 pnpm run deploy
