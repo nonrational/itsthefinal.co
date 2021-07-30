@@ -13,12 +13,15 @@ const App = () => {
     <div>
       <Router>
         <Switch>
+
           <Route path="/untdown">
             <TheCountdown />
           </Route>
-          <Route path="*">
+
+          <Route path="/*">
             <Redirect to="/untdown" />
           </Route>
+
         </Switch>
       </Router>
     </div>
